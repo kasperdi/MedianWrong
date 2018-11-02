@@ -1,3 +1,5 @@
+import java.util.*;
+
 /**
  * Class to be debugged and tested
  * 
@@ -16,6 +18,23 @@ public class Median {
             if (x < y) { m = y; }
             else {
                 if (x < z) { m = y; }
+            }
+        }
+        else {
+            if(x > y) { m = y; }
+            else {
+                if (x > z) { m = x; }
+            } 
+        }
+        return m;
+    }
+    
+    public static int medianCorrect(int x, int y, int z) {
+        int m = z;
+        if(y < z) {
+            if (x < y) { m = y; }
+            else {
+                if (x < z) { m = x; }
             }
         }
         else {
